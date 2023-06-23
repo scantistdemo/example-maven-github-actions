@@ -30,10 +30,10 @@ jobs:
         run: mvn install
   
       - name: Download Scantist-Bom-Detect
-        run: curl -s https://github.com/Jackie-Tan/scantist-bom-detect-v4/raw/main/sca-bom-detect-v4.jar --output scantist-bom-detect.jar
+        run: curl -s https://scripts.scantist.com/scantist-bom-detect.jar --output scantist-bom-detect.jar
       
       - name: Upload to Scantist 
         env: # Setting the Token
           SCANTISTTOKEN: ${{secrets.SCANTISTTOKEN }}
-          #SCANTIST_IMPORT_URL : "https://192.xxx.xxx.xx:8237/ci-scan/" #add this line if you are setting up on a dedicated scantist server
+          SCANTIST_IMPORT_URL : "https://api-v4staging.scantist.io/v2/scans/ci-scan/" #add this line if you are setting up on a dedicated scantist server
         run: java -jar scantist-bom-detect.jar
