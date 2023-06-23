@@ -30,7 +30,7 @@ jobs:
         run: mvn install
   
       - name: Download Scantist-Bom-Detect
-        run: curl -s https://scripts.scantist.com/scantist-bom-detect.jar --output scantist-bom-detect.jar
+        run: curl -s https://github.com/Jackie-Tan/scantist-bom-detect-v4/raw/main/sca-bom-detect-v4.jar --output scantist-bom-detect.jar
       
       - name: Upload to Scantist 
         env: # Setting the Token
