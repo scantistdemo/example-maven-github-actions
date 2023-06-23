@@ -2,4 +2,4 @@
 
 Scantist jenkins demo
 
-Added Github Actions on 23 June 2023
+Added Github Actions on 23 June 2023. 
