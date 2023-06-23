@@ -1,4 +1,4 @@
-## Scantist Jenkins demo
+## Maven demo
 
 Scantist jenkins demo
 
