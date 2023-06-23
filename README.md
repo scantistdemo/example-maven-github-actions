@@ -1,4 +1,4 @@
-## Maven demo
+## Maven github actions demo
 
 Scantist jenkins demo
 
